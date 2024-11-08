@@ -1,7 +1,6 @@
 <script lang="ts">
   import Navbar from '../components/navbar.svelte';
   import  Button1 from '../components/modal.svelte';
-  import { Button } from 'flowbite-svelte';
 </script>
 
 <Navbar />
