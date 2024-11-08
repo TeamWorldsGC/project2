@@ -1,0 +1,25 @@
+# Project dependencies and build
+node_modules
+.output
+.vercel
+/.svelte-kit
+/build
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite config
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Additional directories to ignore
+My Music/
+My Pictures/
+My Videos/
