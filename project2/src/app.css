@@ -1,0 +1,39 @@
+/* src/app.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'flowbite';
+
+/* Custom overlay style */
+@layer components {
+	/* Modal overlay custom class for a transparent background */
+	.modal-overlay-custom {
+		background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+	}
+
+	/* Optional: Style for the modal itself */
+	.modal {
+		background-color: white; /* Set the modal background color */
+		box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+		border-radius: 0.5rem; /* Optional: Rounded corners */
+	}
+
+	/* Optional: Style for the modal header */
+	.modal-header {
+		font-size: 1.25rem; /* Larger header text */
+		font-weight: 600; /* Semi-bold */
+		color: theme('colors.customBlue'); /* Use customBlue for the text color */
+	}
+
+	/* Optional: Style for modal footer */
+	.modal-footer {
+		display: flex; /* Flexbox layout */
+		justify-content: flex-end; /* Align footer buttons to the right */
+	}
+
+	/* src/app.css */
+	.custom-bg {
+		background-color: #23395b; /* Your custom background color */
+		color: white; /* Adjust text color for contrast */
+	}
+}
