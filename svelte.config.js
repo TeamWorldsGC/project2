@@ -3,15 +3,22 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	// Consult https://svelte.dev/docs/kit/integrations
-	// for more information about preprocessors
+	// Using Vite preprocessor
 	preprocess: vitePreprocess(),
 
 	kit: {
-		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
-		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
-		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
-		adapter: adapter({ pages: "build", assets: "build", fallback: undefined, precompress: false, strict: true }),
+		// Static adapter with necessary configuration for GitHub Pages
+		adapter: adapter({
+			pages: "build",
+			assets: "build",
+			fallback: undefined,
+			precompress: false,
+			strict: true
+		}),
+		// Set the base path to match the GitHub repository name
+		paths: {
+			base: "/project2"  // Update this to your repository name
+		},
 	}
 };
 
