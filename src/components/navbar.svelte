@@ -9,7 +9,7 @@
     <span class="text-center">Scheduling</span>
   </div>
   <nav class="text-2xl flex space-x-6 font-bold text-customGreen">
-    <a href="/events-page" class="hover:underline">Events</a>
-    <a href="/contact-page" class="hover:underline">Contact Us</a>
+    <a href="/events" class="hover:underline">Events</a>
+    <a href="/contact" class="hover:underline">Contact Us</a>
   </nav>
 </header>
